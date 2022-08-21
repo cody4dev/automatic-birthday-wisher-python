@@ -55,6 +55,8 @@ def wish(i):
     text_image.text((55, 380), str, font=fnt, fill=(0, 0, 0))
 
     opening_image.save('img/birthday_wish.png')
+    
+    pywhatkit.sendwhats_image(i.get("number"), "img/birthday_wish.png")
 
 
 def wishing():
